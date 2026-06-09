@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rahi — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Rahi driving companion app." />
+<style>
+  :root {
+    --bg: #0d0d0d;
+    --card: #161616;
+    --text: #e8e8e8;
+    --text-dim: #a8a8a8;
+    --accent: #b8f23a;
+    --border: #262626;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+  h1 { font-size: 1.9rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.25rem; margin: 2.4em 0 0.6em; letter-spacing: -0.01em; }
+  h3 { font-size: 1.02rem; margin: 1.6em 0 0.4em; color: var(--text); }
+  .updated { color: var(--text-dim); font-size: 0.92rem; margin-bottom: 1.6em; }
+  p, li { color: var(--text); }
+  a { color: var(--accent); }
+  strong { color: #fff; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 2.4em 0; }
+  .lead {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 1.4em 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--accent); font-weight: 600; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin: 0.3em 0; }
+  code { background: #1f1f1f; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Rahi — Privacy Policy</h1>
+<div class="updated">Last updated: 9 June 2026</div>
+
+<p>Rahi ("Rahi", "we", "us") is a driving companion app that turns your phone's
+motion and location sensors into a personal driving score and coaching. This
+policy explains, in plain language, what data Rahi collects, what stays on your
+phone, what goes to our servers, and the choices and rights you have.</p>
+
+<p>We have written this policy to be honest and specific. If anything here is
+unclear, contact us at the address in Section 11.</p>
+
+<div class="lead">
+<h2 style="margin-top:0">1. The one thing to know first: your video never leaves your phone</h2>
+<p>If you use Rahi's recording feature, any <strong>video is stored only on your
+device</strong>. Video is <strong>never uploaded</strong> to our servers, never
+sent to any third party, and never seen by us. You can delete the video for any
+trip at any time from within the app while keeping (or also deleting) the trip's
+score.</p>
+<p>What we <em>do</em> process in the cloud is the <strong>motion and location
+sensor data</strong> from your drive — not images of the road, faces, or number
+plates.</p>
+</div>
+
+<h2>2. What data we collect</h2>
+
+<h3>2.1 Data processed on our servers (cloud)</h3>
+<p>When you record a trip and it uploads, the following leaves your device and
+is processed on our servers:</p>
+<ul>
+  <li><strong>Location data</strong> — GPS latitude, longitude, and speed during the trip.</li>
+  <li><strong>Motion sensor data</strong> — accelerometer, gyroscope, and (if your phone has one) barometric-altitude readings, with timestamps.</li>
+  <li><strong>Trip metadata</strong> — start time, duration, distance, and the vehicle you selected for the trip.</li>
+  <li><strong>Derived results</strong> — the driving score, detected driving events (e.g. a hard brake), road segments, and AI-generated coaching text computed from the above.</li>
+</ul>
+
+<h3>2.2 Data stored only on your device (local)</h3>
+<ul>
+  <li><strong>Video</strong> (if recorded) — see Section 1. Local only.</li>
+</ul>
+
+<h3>2.3 Account data</h3>
+<ul>
+  <li>Rahi works <strong>anonymously by default</strong> — you can record and score trips without giving us any personal identifier.</li>
+  <li>If you choose to <strong>back up your account</strong>, you provide an <strong>email address and password</strong>. This lets you recover your trips after reinstalling or switching phones. Providing an email is <strong>optional</strong>.</li>
+</ul>
+
+<h3>2.4 What we do not collect</h3>
+<ul>
+  <li>We do <strong>not</strong> use any third-party analytics, advertising, or crash-tracking SDKs. There are no trackers in the app.</li>
+  <li>We do <strong>not</strong> collect your contacts, photos, microphone audio for any purpose other than (optionally) recording your own local trip video, or any data unrelated to driving.</li>
+</ul>
+
+<h2>3. Permissions and why we ask for them</h2>
+<table>
+  <tr><th>Permission</th><th>Why Rahi needs it</th></tr>
+  <tr><td><strong>Location</strong> (precise)</td><td>To record your route and speed, the core of trip scoring.</td></tr>
+  <tr><td><strong>Physical activity / motion sensors</strong></td><td>To read accelerometer and gyroscope, which detect braking, cornering, and acceleration.</td></tr>
+  <tr><td><strong>Camera</strong></td><td>Only if you choose to record trip video, which stays on your phone.</td></tr>
+  <tr><td><strong>Microphone</strong></td><td>Only to capture audio for that local video recording.</td></tr>
+  <tr><td><strong>Notifications</strong></td><td>To show recording status and trip-ready alerts.</td></tr>
+  <tr><td><strong>Run while driving (foreground service) / keep awake</strong></td><td>To keep recording reliably while your screen is off.</td></tr>
+  <tr><td><strong>Network access</strong></td><td>To upload sensor data and fetch your scores and coaching.</td></tr>
+</table>
+<p>You can revoke any permission in Android Settings. Revoking location or
+motion access will stop trip recording from working.</p>
+
+<h2>4. Where your data is stored</h2>
+<p>Cloud data (sensor data and derived results) is stored with our
+infrastructure provider <strong>Supabase</strong>, in a data centre located in
+<strong>Mumbai, India (ap-south-1)</strong>. Our trip-processing service runs on
+a server hosted in India.</p>
+<p>Coaching text is generated by sending an <strong>anonymised, numeric
+summary</strong> of the trip (scores, event counts, road types — no raw GPS
+trace and no personal identifiers) to a large-language-model provider. We do not
+send your name, email, or precise location to that provider.</p>
+
+<h2>5. How long we keep data</h2>
+<ul>
+  <li><strong>Raw sensor uploads</strong> (the original sensor files) are automatically deleted from cloud storage <strong>within 24 hours</strong> of processing.</li>
+  <li><strong>Processed trip data</strong> (your scores, events, and coaching) is kept so you can review your history, until <strong>you delete the trip</strong> or your account.</li>
+  <li><strong>Local video</strong> stays until <strong>you</strong> delete it or uninstall the app.</li>
+</ul>
+<p>You can delete any individual trip, or your entire account and its data, from
+within the app at any time.</p>
+
+<h2>6. How we use your data</h2>
+<p>We use your data only to:</p>
+<ol>
+  <li>Compute and show <strong>your</strong> driving score, trip timeline, and coaching.</li>
+  <li>Let you review your driving history and trends.</li>
+  <li>Maintain and improve the accuracy of the scoring and detection.</li>
+</ol>
+<p>We do <strong>not</strong> sell your personal data. We do <strong>not</strong>
+share your individual, identifiable driving data with insurers, advertisers, or
+any third party.</p>
+<p>If, in future, Rahi offers features built on <strong>aggregated,
+anonymised</strong> road data (for example a shared hazard map), such data is
+statistically combined across many drivers so that an individual trip or person
+cannot be identified, and any such feature will be described to you before it
+applies.</p>
+
+<h2>7. Your rights</h2>
+<p>Depending on your jurisdiction (including under India's Digital Personal Data
+Protection Act, 2023), you have the right to:</p>
+<ul>
+  <li><strong>Access</strong> the personal data we hold about you.</li>
+  <li><strong>Correct</strong> inaccurate data.</li>
+  <li><strong>Delete</strong> your data (via in-app trip/account deletion, or by contacting us).</li>
+  <li><strong>Withdraw consent</strong> by deleting your account and uninstalling the app.</li>
+</ul>
+<p>To exercise any right you cannot complete in-app, contact us (Section 11).</p>
+
+<h2>8. Security</h2>
+<p>We protect your data with encrypted connections (HTTPS/TLS) in transit and
+provider-managed encryption at rest. Access to cloud data is restricted by
+per-user access controls so that one user cannot read another user's trips. No
+system is perfectly secure, but we take reasonable measures appropriate to the
+sensitivity of the data.</p>
+
+<h2>9. Children</h2>
+<p>Rahi is intended for licensed drivers and is <strong>not directed at children
+under 18</strong>. We do not knowingly collect data from anyone under 18. If you
+believe a minor has used the app, contact us and we will delete the associated
+data.</p>
+
+<h2>10. Changes to this policy</h2>
+<p>We may update this policy as the app evolves. Material changes will be
+reflected by the "Last updated" date above, and significant changes will be
+communicated in-app before they take effect.</p>
+
+<h2>11. Contact</h2>
+<p>For any privacy question or request, or to reach our grievance officer:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:rahaanirban91@gmail.com">rahaanirban91@gmail.com</a></li>
+</ul>
+<p>We aim to respond within a reasonable time, and within the timelines required
+by applicable law.</p>
+
+<hr />
+<p style="color:var(--text-dim);font-size:0.85rem">© 2026 Rahi. This page is the official privacy policy for the Rahi Android app.</p>
+
+</div>
+</body>
+</html>
