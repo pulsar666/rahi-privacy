@@ -53,7 +53,7 @@
 <div class="wrap">
 
 <h1>Rahi — Privacy Policy</h1>
-<div class="updated">Last updated: 19 June 2026</div>
+<div class="updated">Last updated: 23 June 2026</div>
 
 <p>Rahi ("Rahi", "we", "us") is a driving companion app that turns your phone's
 motion and location sensors into a personal driving score and coaching. This
@@ -86,6 +86,7 @@ is processed on our servers:</p>
   <li><strong>Trip metadata</strong> — start time, duration, distance, and the vehicle you selected for the trip.</li>
   <li><strong>Derived results</strong> — the driving score, detected driving events (e.g. a hard brake), road segments, and AI-generated coaching text computed from the above.</li>
   <li><strong>Crash reports</strong> (if enabled) — when the app crashes or hits an error, a diagnostic record is sent so we can fix it: the error type and a short technical stack trace, the app version, and your device model and Android version. This contains <strong>no personal data, no location, and no trip content</strong>. You can turn crash reports off in Settings → Privacy.</li>
+  <li><strong>Anonymous usage statistics</strong> — to understand which screens and features are used, the app records anonymous, aggregate events (which screen or action, and the day). Each event carries only a random, one-way <strong>anonymous install identifier</strong> — never your account, email, location, or any trip content — and it <strong>cannot be linked back to you</strong>. We use this only to see, in aggregate, what parts of the app people use.</li>
 </ul>
 
 <h3>2.2 Data stored only on your device (local)</h3>
@@ -101,7 +102,7 @@ is processed on our servers:</p>
 
 <h3>2.4 What we do not collect</h3>
 <ul>
-  <li>We do <strong>not</strong> use any third-party analytics, advertising, or crash-tracking SDKs. There are no trackers in the app. Crash reports go only to our own servers, not to any third party, and can be turned off.</li>
+  <li>We do <strong>not</strong> use any third-party analytics, advertising, or crash-tracking SDKs. There are no third-party trackers in the app. The only usage data we collect is the <strong>anonymous, aggregate, first-party</strong> statistics described in Section 2.1 — it stays on our own servers, goes to no third party, and is not tied to your identity. Crash reports go only to our own servers and can be turned off.</li>
   <li>We do <strong>not record audio</strong>. Trip video (if you enable it) is silent — no microphone is used. We also do not collect your contacts, photos, or any data unrelated to driving.</li>
 </ul>
 
@@ -132,12 +133,12 @@ send your name, email, or precise location to that provider.</p>
 <ul>
   <li><strong>Raw sensor uploads</strong> (the original sensor files) are removed
   from our primary upload storage <strong>within 24 hours</strong> of processing.
-  We retain a copy of your raw sensor data in <strong>secure backup storage</strong>
-  so that we can re-run and improve our scoring as our methods evolve, and so we
-  can restore your trips if processing fails. This retained copy is used
-  <strong>only to maintain and improve scoring accuracy</strong>, is never sold
-  or shared in identifiable form, and is deleted when you delete the trip or your
-  account.</li>
+  We retain a copy of your raw sensor data in <strong>secure backup storage
+  (Cloudflare R2, encrypted)</strong> so that we can re-run and improve our
+  scoring as our methods evolve, and so we can restore your trips if processing
+  fails. This retained copy is used <strong>only to maintain and improve scoring
+  accuracy</strong>, is never sold or shared in identifiable form, and is deleted
+  when you delete the trip or your account.</li>
   <li><strong>Processed trip data</strong> (your scores, events, and coaching) is kept so you can review your history, until <strong>you delete the trip</strong> or your account.</li>
   <li><strong>Local video</strong> stays until <strong>you</strong> delete it or uninstall the app.</li>
 </ul>
